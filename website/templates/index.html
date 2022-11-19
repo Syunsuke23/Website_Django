@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <!--CSS BOOTSTRAP-->
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
+    </head>
+
+    <body>
+        <img id="banner" src="{% static 'img/home.jpg' %}" alt="">
+        <div id="menu">
+            <ul>
+                <li><a href="/" class="" >Home</a></li>
+                <li><a href="/about" class="" >About</a></li>
+                <li><a href="/buku" class="" >Data Buku</a></li>
+                <li><a href="/tamu" class="">Form Tamu</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTAINER BOOTSTRAP -->
+    <div class="container">
+        <br>
+        <div class="jumbotron">
+            <h1 class="display-4">Selamat Datang Yang Masuk Website ini</h1>
+            <p class="lead"> Saya Membuat Website ini demi nilai UTS dan UAS aman jaya</p>
+            <hr class="my-4">
+            <p> untuk membuat website ini saya membutuhkan 2 minggu lama dan itupun masih ada beberapa bagian yang tidak aku pahami</p>
+            <hr class="my-4">
+            <p> itupun juga saya hanya mentok di modul 8 PDF karena endak mau error di modul 9</p>
+            <hr class="my-4">
+            <p> semoga setelah tugas ini selesai, saya bisa mengembangkan website ini menjadi lebih biar 1 dari masalah dalam skripsi saya aman </p>
+            <h3> Terima kasih </h3>
+            
+
+        </div>
+    </div>
+    <!-- END CONTAINER BOOTSTRAP -->
+
+
+            <!-- JS BOOTSTRAP -->
+    <script src="{% static 'vendor/bootstrap/bootstrap.js' %}" type="text/javascripts"></script>
+    <script src="{% static 'vendor/bootstrap/jquery-3.3.1.slim.min.js' %}" type="text/javascripts"></script>
+    <script src="{% static 'vendor/bootstrap/popper.min.js' %}" type="text/javascripts"></script>
+
+
+    </body>
+</html>

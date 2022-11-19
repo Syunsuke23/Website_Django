@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Buku Tamu</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+         <!--CSS BOOTSTRAP-->
+         <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
+    </head>
+
+    <body>
+        <img id="banner" src="{% static 'buku/img/crud.jpg' %}" alt="">
+        <div id="menu">
+            <ul>
+                <li><a href="/" class="" >Home</a></li>
+                <li><a href="/about" class="" >About</a></li>
+                <li><a href="/buku" class="" >Data Buku</a></li>
+                <li><a href="/tamu" class="">Form Tamu</a></li>
+            </ul>
+        </div>
+        
+        <div class="container">
+            <br>
+                <form method="POST">
+                    {% csrf_token %}
+                    <table>
+                        {{BukuTamu.as_table}}
+                    </table>
+                    <button class="btn btn-success" type="submit">Simpan</button>
+                </form>
+        </div>
+    
+                <!-- JS BOOTSTRAP -->
+                <script src="{% static 'vendor/bootstrap/bootstrap.js' %}" type="text/javascripts"></script>
+                <script src="{% static 'vendor/bootstrap/jquery-3.3.1.slim.min.js' %}" type="text/javascripts"></script>
+                <script src="{% static 'vendor/bootstrap/popper.min.js' %}" type="text/javascripts"></script>
+
+    </body>
+</html>

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+         <!--CSS BOOTSTRAP-->
+         <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
+    </head>
+
+    <body>
+        <img id="banner" src="{% static 'about/img/about.jpg' %}" alt="">
+        <div id="menu">
+            <ul>
+                <li><a href="/" class="" >Home</a></li>
+                <li><a href="/about" class="" >About</a></li>
+                <li><a href="/buku" class="" >Data Buku</a></li>
+                <li><a href="/tamu" class="">Form Tamu</a></li>
+            </ul>
+        </div>
+        
+    <!--CONTAINER BOOTSTRAP -->
+    <!--https://getbootstrap.com/docs/4.5/getting-started/introduction/-->
+
+    <div class="container">
+        <p></p>
+        <!--https://getbootstrap.com/docs/4.5/components/alerts/-->
+        <div class="alert alert-dark" role="dark">
+            <h4 class="alert-heading">About Me</h4>
+            <p>Nama saya adalah Reynaldo Romero, asal Alas barat. dan memasuki Informatika karena prospek kerjanya sesuai yang aku harapkan
+               , dan ternyata itu hanya ekspetasi semata. 
+            </p>
+            <hr>
+            <p class="mb-0"> sekarang udah sampai semester 7 dan baru bisa buat website amatiran itupun ditolong sama modul yang berikan oleh dosen</p>
+        </div>
+    </div>
+
+                <!-- JS BOOTSTRAP -->
+                <script src="{% static 'vendor/bootstrap/bootstrap.js' %}" type="text/javascripts"></script>
+                <script src="{% static 'vendor/bootstrap/jquery-3.3.1.slim.min.js' %}" type="text/javascripts"></script>
+                <script src="{% static 'vendor/bootstrap/popper.min.js' %}" type="text/javascripts"></script>
+
+    </body>
+</html>
